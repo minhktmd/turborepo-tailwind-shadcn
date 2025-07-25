@@ -1,0 +1,30 @@
+{
+  "name": "@repo/tailwindcss",
+  "version": "1.0.0",
+  "description": "Shared Tailwind CSS configuration for monorepo",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./style": "./shared-styles.css",
+    "./postcss": "./postcss.config.js",
+    "./eslint": {
+      "default": "./eslint-preset.js",
+      "import": "./eslint-preset.js",
+      "require": "./eslint-preset.cjs"
+    },
+    "./prettier": {
+      "default": "./prettier-preset.js",
+      "import": "./prettier-preset.js",
+      "require": "./prettier-preset.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "eslint-plugin-tailwindcss": "4.0.0-beta.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "eslint": "^9.31.0",
+    "tailwindcss": "^4.1.5"
+  }
+}
