@@ -11,6 +11,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@repo/tailwindcss": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
     "@repo/ui": "workspace:*",
     "next": "^15.4.2",
     "react": "^19.1.0",
@@ -23,6 +25,7 @@
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "eslint": "^9.31.0",
+    "prettier": "^3.6.2",
     "typescript": "5.8.2"
   }
 }
