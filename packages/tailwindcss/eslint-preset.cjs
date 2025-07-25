@@ -6,7 +6,7 @@ module.exports = {
   },
   rules: {
     ...tailwindcssPlugin.configs.recommended.rules,
-    'tailwindcss/no-custom-classname': 'warn',
+    'tailwindcss/no-custom-classname': 'off',
     'tailwindcss/classnames-order': 'warn',
     'tailwindcss/no-arbitrary-value': 'off',
   },
