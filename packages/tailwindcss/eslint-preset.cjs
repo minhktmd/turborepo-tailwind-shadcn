@@ -1,18 +1,20 @@
+const tailwindcssPlugin = require('eslint-plugin-tailwindcss')
+
 module.exports = {
-  extends: [
-    'plugin:tailwindcss/recommended',
-  ],
-  plugins: ['tailwindcss'],
+  plugins: {
+    tailwindcss: tailwindcssPlugin,
+  },
   rules: {
+    ...tailwindcssPlugin.configs.recommended.rules,
     'tailwindcss/no-custom-classname': 'warn',
-    'tailwindcss/no-contradicting-classname': 'error',
     'tailwindcss/classnames-order': 'warn',
     'tailwindcss/no-arbitrary-value': 'off',
   },
   settings: {
     tailwindcss: {
       callees: ['classnames', 'clsx', 'cn'],
-      config: 'tailwind.config.ts',
+      config: false, // Disable config file resolution
+      cssFiles: ['**/*.css', '**/*.scss', '**/*.sass'],
     },
   },
 };
