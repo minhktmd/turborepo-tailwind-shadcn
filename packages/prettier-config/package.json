@@ -1,0 +1,17 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "0.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "dependencies": {
+    "@repo/tailwindcss": "workspace:*"
+  },
+  "peerDependencies": {
+    "prettier": "^3.1.1",
+    "@repo/tailwindcss": "workspace:*"
+  }
+} 

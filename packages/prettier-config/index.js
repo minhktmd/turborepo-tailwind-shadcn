@@ -1,0 +1,15 @@
+import tailwindcss from "@repo/tailwindcss/prettier";
+
+export default {
+  ...tailwindcss,
+  semi: false,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  printWidth: 80,
+  useTabs: false,
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: 'avoid',
+  endOfLine: 'lf',
+}; 
