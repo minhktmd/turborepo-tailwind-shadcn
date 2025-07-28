@@ -1,8 +1,7 @@
 import Image from 'next/image'
+import { Button } from '@repo/ui/components/button'
 
 export default function Home() {
-  const a = 5
-  console.log(a)
   return (
     <div className="grid min-h-screen grid-rows-[20px_1fr_20px] place-items-center gap-16 p-8 pb-20 font-sans sm:p-20">
       <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
@@ -26,7 +25,9 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
-
+        <Button size="lg" variant={'destructive'}>
+          Click me
+        </Button>
         <article className="prose lg:prose-xl">
           <h1>Garlic bread with cheese: What the science tells us</h1>
           <p>

@@ -1,2 +1,4 @@
 @import 'tailwindcss';
 @import '@repo/tailwindcss/style';
+@import '@repo/ui/styles/global.css';
+@source '../node_modules/@repo/ui';
